@@ -1,0 +1,332 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.ContactCard {
+	.container {
+	  max-width: 700px;
+	  margin: 0px auto;
+	  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+	}
+  
+	.row {
+	  padding: 20px;
+	}
+  
+	.listItem {
+	  max-width: 715px;
+	  margin: 5px auto 5px auto;
+	  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+	}
+  
+	.button {
+	  text-decoration: none;
+	}
+  
+
+	.Persona {
+	  display: flex;
+	}
+	.PersonaActions {
+	  -webkit-padding-start: 0px;
+	  margin-left:0px;
+	}
+	.PersonaAction {
+	  display: inline;
+	  list-style-type: none;
+	  padding-right: 20px;
+	
+	}
+	.personaDetails  {
+	  display: inline-block;
+	}
+
+
+	  .ul {
+	
+		margin-left:0px;
+	  }
+
+  
+}
+  
+
+
+
+.SearchResults {
+
+	
+
+
+
+
+	.container {
+		box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+		max-width: 700px;
+		margin: 0px auto;
+	}
+
+	.templateTable {
+
+		ul {
+			margin-left:0px;
+		}
+		.PersonaActions {
+			-webkit-padding-start: 0px;
+			margin-left:0px;
+		  }
+
+		.ContactCard {
+			.container {
+			  max-width: 700px;
+			  margin: 0px auto;
+			  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+			}
+		  
+			.row {
+			  padding: 20px;
+			}
+		  
+			.listItem {
+			  max-width: 715px;
+			  margin: 5px auto 5px auto;
+			  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+			}
+		  
+			.button {
+			  text-decoration: none;
+			}
+		  
+		
+			}
+			.Persona {
+			  display: flex;
+			}
+			.PersonaActions {
+			  -webkit-padding-start: 0px;
+			  margin-left:0px;
+			}
+			.PersonaAction {
+			  display: inline;
+			  list-style-type: none;
+			  padding-right: 20px;
+			
+			}
+			.personaDetails  {
+			  display: inline-block;
+			}
+			
+			  .ul {
+				  margin-left:0px;
+			  }
+		  
+		}
+
+
+		
+		table {
+			display: flex
+		}
+		@media (max-width: 800px) and (min-width: 400px) {
+			table {
+				display: flex;
+			  	flex-flow: row wrap;
+			}
+		}
+		@media (max-width: 400px) {
+			table {
+			  flex-flow: column wrap;
+			  width: 100%;
+			}
+		}
+		th {
+			 // border: 1px solid grey;
+			background-color: lightgray;	
+			text-align: left;
+		}
+
+
+
+		@media (max-width: 800px) and (min-width: 400px) {
+			tr {
+				display: flex;
+			  	flex-flow: column;
+			}
+		}
+		@media (max-width: 400px) {
+			tr {
+				display: flex;
+			  	flex-flow: column wrap;
+			  	width: 100%;
+			}
+			td:nth-of-type(1) {
+				display: none;
+			}
+			td {			
+				img:nth-of-type(1) {
+					width:36px; /* you can use % */
+					height: auto;
+				}
+
+				.personaActions {
+					ul {
+						margin-left:0px;
+						padding-left:0px;
+					}
+				}
+
+				.ul {
+					margin-left:0px;
+				}
+
+
+				.personaActions {
+					ul {
+						li {
+							padding-right: 10px
+						}
+
+					}
+				}
+			}
+		}
+
+
+
+		td {
+			text-align: left;
+			vertical-align: top;
+		}	
+		
+		a {
+		text-decoration: none;
+		
+
+		&:visited {
+			text-decoration: none;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+		}
+
+		
+
+	}
+
+	.templateList {
+
+		
+	
+
+
+		li {
+			background-color: #fff;
+			border: 1px solid #dddddd;
+			display: block;
+			//margin-bottom: -1px;
+			padding: 7px 5px 5px 0px;
+			position: relative;
+			border-left: 0 none;
+			border-radius: 0;
+			border-right: 0 none;
+			border-top:none;
+
+		}
+		ul {
+    -moz-box-direction: normal;
+    -moz-box-orient: vertical;
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0px 0px 0px;
+	padding-left: 0;
+	list-style: none;
+}
+
+div {
+	overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+span {
+	overflow: hidden;
+    text-overflow: ellipsis;
+	white-space: nowrap;
+	color:#333333;
+}
+
+.templateListDescription{
+	font-size:14px;
+	color:#333;
+}
+
+.templateListUrl {
+	font-size:11px;
+	color:#999;
+	vertical-align:top;
+}
+
+.templateListUrl:hover {
+	font-size:11px;
+	color:#333;
+	vertical-align:top;
+}
+.templateListTitle {
+	font-size:17px;
+	color: #007bff;
+    text-decoration: none;
+	font-weight:400;
+}
+.templateListTitle:hover {
+	font-size:17px;
+	color: #333;
+    text-decoration: none;
+	font-weight:400;
+}
+.templateListTitle:visited {
+	font-size:17px;
+	color: #007bff;
+	 text-decoration: none;
+	font-weight:400;
+}
+
+.templateListImg {
+	margin-right:3px;
+
+}
+.headertext {
+font-size:24px!important;
+font-weight:100;
+}
+.headerhr {
+margin-bottom:-15px;
+-moz-border-bottom-colors: none;
+-moz-border-left-colors: none;
+-moz-border-right-colors: none;
+-moz-border-top-colors: none;
+border-color: rgba(0, 0, 0, 0.1) currentcolor currentcolor;
+border-image: none;
+border-style: solid none none;
+border-width: 1px 0 0;
+margin-top: 1rem;
+
+}
+
+a {
+	text-decoration: none;
+	color: #007bff;
+
+	&:visited {
+		text-decoration: none;
+		color: #333;
+	}
+
+	&:hover {
+		text-decoration: none;
+		color: #333;
+	}
+	}
+	
+
+	
+
+}
